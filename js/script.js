@@ -1,5 +1,5 @@
 // Navbar Scroll Effect
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     const navbar = document.getElementById('navbar');
     if (window.scrollY > 50) {
         navbar.classList.add('scrolled');
@@ -7,6 +7,7 @@ window.addEventListener('scroll', function() {
         navbar.classList.remove('scrolled');
     }
 });
+//fre//
 
 // Mobile Menu Toggle
 const mobileMenu = document.getElementById('mobile-menu');
@@ -38,23 +39,23 @@ revealElements.forEach(el => {
 const contactForm = document.getElementById('contact-form');
 
 if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
+    contactForm.addEventListener('submit', function (e) {
         e.preventDefault();
-        
+
         // Basic animation for feedback
         const btn = contactForm.querySelector('button');
         const originalText = btn.innerText;
-        
+
         btn.disabled = true;
         btn.innerText = 'Sending...';
-        
+
         // Simulate API call
         setTimeout(() => {
             alert('Thank you for your message! Our team will get back to you soon.');
             btn.innerText = 'Message Sent ✓';
             btn.style.background = '#10b981';
             contactForm.reset();
-            
+
             setTimeout(() => {
                 btn.disabled = false;
                 btn.innerText = originalText;
@@ -68,14 +69,14 @@ if (contactForm) {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        
+
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
             window.scrollTo({
                 top: target.offsetTop - 80,
                 behavior: 'smooth'
             });
-            
+
             // Close mobile menu if open
             if (navLinks.classList.contains('active')) {
                 mobileMenu.classList.remove('active');
