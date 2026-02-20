@@ -16,6 +16,7 @@ const navLinks = document.querySelector('.nav-links');
 mobileMenu.addEventListener('click', () => {
     mobileMenu.classList.toggle('active');
     navLinks.classList.toggle('active');
+    document.body.classList.toggle('no-scroll');
 });
 
 // Scroll Reveal Animation (Intersection Observer)
@@ -81,6 +82,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             if (navLinks.classList.contains('active')) {
                 mobileMenu.classList.remove('active');
                 navLinks.classList.remove('active');
+                document.body.classList.remove('no-scroll');
             }
         }
     });
