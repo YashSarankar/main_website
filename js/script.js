@@ -7,17 +7,47 @@ window.addEventListener('scroll', function () {
         navbar.classList.remove('scrolled');
     }
 });
-//fre//
 
 // Mobile Menu Toggle
 const mobileMenu = document.getElementById('mobile-menu');
 const navLinks = document.querySelector('.nav-links');
 
-mobileMenu.addEventListener('click', () => {
-    mobileMenu.classList.toggle('active');
-    navLinks.classList.toggle('active');
-    document.body.classList.toggle('no-scroll');
-});
+if (mobileMenu) {
+    mobileMenu.addEventListener('click', () => {
+        mobileMenu.classList.toggle('active');
+        navLinks.classList.toggle('active');
+        document.body.classList.toggle('no-scroll');
+    });
+}
+
+// Theme Toggle Logic
+const themeToggle = document.getElementById('theme-toggle');
+const themeIcon = themeToggle ? themeToggle.querySelector('i') : null;
+
+if (themeToggle) {
+    // Check for saved theme
+    const savedTheme = localStorage.getItem('theme') || 'dark-theme';
+    document.body.className = savedTheme;
+    updateThemeIcon(savedTheme);
+
+    themeToggle.addEventListener('click', () => {
+        const isDark = document.body.classList.contains('dark-theme');
+        const newTheme = isDark ? 'light-theme' : 'dark-theme';
+
+        document.body.className = newTheme;
+        localStorage.setItem('theme', newTheme);
+        updateThemeIcon(newTheme);
+    });
+}
+
+function updateThemeIcon(theme) {
+    if (!themeIcon) return;
+    if (theme === 'light-theme') {
+        themeIcon.className = 'fas fa-sun';
+    } else {
+        themeIcon.className = 'fas fa-moon';
+    }
+}
 
 // Scroll Reveal Animation (Intersection Observer)
 const revealElements = document.querySelectorAll('.reveal');
@@ -87,21 +117,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
 // Back to Top functionality
 const backToTop = document.getElementById('back-to-top');
 
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
-        backToTop.classList.add('show');
-    } else {
-        backToTop.classList.remove('show');
-    }
-});
-
-backToTop.addEventListener('click', (e) => {
-    e.preventDefault();
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
+if (backToTop) {
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTop.classList.add('show');
+        } else {
+            backToTop.classList.remove('show');
+        }
     });
-});
+
+    backToTop.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}

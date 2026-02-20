@@ -53,14 +53,16 @@
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#portfolio">Work</a></li>
-                <li><a href="#insights">Insights</a></li>
-                <li><a href="#guides">Guides</a></li>
-                <li><a href="#why-us">Why Us</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#contact" class="btn btn-primary">Contact</a></li>
+                <li><a href="#insights">Updates</a></li>
+                <li><a href="#contact" class="btn btn-primary">Hire Me</a></li>
+                <li class="theme-switch">
+                    <button id="theme-toggle" aria-label="Toggle Theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
             </ul>
             <div class="menu-toggle" id="mobile-menu">
                 <span class="bar"></span>
@@ -74,123 +76,175 @@
     <section id="home" class="hero section">
         <div class="container">
             <div class="hero-content">
-                <h1 class="fade-in">Engineering the <span class="gradient-text">Future</span> of Digital Experience.
-                </h1>
-                <p class="fade-in delay-1">We build high-quality mobile apps, software, and websites that solve real
-                    business problems with performance and scalability at the core.</p>
+                <span class="badge fade-in">Available for Projects</span>
+                <h1 class="fade-in">I Build <span class="gradient-text">Innovative Apps</span> & Engaging Digital
+                    Experiences.</h1>
+                <p class="fade-in delay-1">Expert in Flutter, Mobile, and Web development. Specialized in creating
+                    high-performance, scalable software solutions that solve real business problems.</p>
                 <div class="hero-btns fade-in delay-2">
-                    <a href="#contact" class="btn btn-primary">Get in Touch</a>
-                    <a href="#portfolio" class="btn btn-secondary">View Our Work</a>
+                    <a href="#portfolio" class="btn btn-primary">Explore Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Hire Me</a>
                 </div>
             </div>
             <div class="hero-visual fade-in delay-3">
-                <div class="glass-card">
-                    <div class="coding-activity">
+                <div class="glass-card main-viz">
+                    <div class="viz-header">
                         <div class="dot red"></div>
                         <div class="dot yellow"></div>
                         <div class="dot green"></div>
-                        <div class="terminal-text">
-                            <span class="cmd">> sarankar-dev deploy --prod</span>
-                            <span class="res">✓ App successfully deployed to production</span>
-                            <span class="cmd">> analytics --uptime</span>
-                            <span class="res">99.9% Uptime Guaranteed</span>
-                        </div>
                     </div>
+                    <div class="viz-content">
+                        <div class="code-line"><span class="purple">class</span> <span class="blue">Sarankar</span> {
+                        </div>
+                        <div class="code-line indent"><span class="purple">void</span> <span
+                                class="yellow">buildImpact</span>() {</div>
+                        <div class="code-line indent-2"><span class="green">// Creating the future...</span></div>
+                        <div class="code-line indent-2"><span class="blue">deploy</span>(<span
+                                class="orange">"innovation"</span>);</div>
+                        <div class="code-line indent">}</div>
+                        <div class="code-line">}</div>
+                    </div>
+                </div>
+                <div class="floating-badge badge-1">
+                    <i class="fab fa-flutter"></i>
+                    <span>Flutter Expert</span>
+                </div>
+                <div class="floating-badge badge-2">
+                    <i class="fas fa-code"></i>
+                    <span>Full Stack</span>
                 </div>
             </div>
         </div>
         <div class="hero-bg-anim"></div>
     </section>
 
-    <!-- Ad Slot: Hero Bottom -->
-    <div class="container ad-container">
-        <ins class="adsbygoogle" data-ad-client="ca-pub-5747718526576102" data-ad-slot="HERO_AD_SLOT_ID"
-            data-ad-format="auto" data-full-width-responsive="true"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-    </div>
-
-    <!-- Services Section -->
-    <section id="services" class="section">
+    <!-- About Section -->
+    <section id="about" class="section">
         <div class="container">
-            <div class="section-header">
-                <span class="subtitle">Our Expertise</span>
-                <h2>Scalable Solutions for Modern Businesses</h2>
-            </div>
-            <div class="services-grid">
-                <div class="service-card reveal">
-                    <div class="icon-box"><i class="fas fa-mobile-alt"></i></div>
-                    <h3>Mobile App Development</h3>
-                    <p>Native and cross-platform mobile experiences that users love, optimized for performance and
-                        reach.</p>
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <div class="image-wrapper">
+                        <img src="assets/yash.jpg" alt="Yash Sarankar">
+                        <div class="experience-badge">
+                            <span class="num">5+</span>
+                            <span class="text">Years XP</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="service-card reveal">
-                    <div class="icon-box"><i class="fas fa-code"></i></div>
-                    <h3>Software Development</h3>
-                    <p>Custom enterprise-grade software built to streamline your business operations and grow with you.
-                    </p>
-                </div>
-                <div class="service-card reveal">
-                    <div class="icon-box"><i class="fas fa-laptop-code"></i></div>
-                    <h3>Website Development</h3>
-                    <p>Modern, responsive, and SEO-optimized websites that turn visitors into loyal customers.</p>
-                </div>
-                <div class="service-card reveal">
-                    <div class="icon-box"><i class="fas fa-chart-line"></i></div>
-                    <h3>Admin Panels & Dashboards</h3>
-                    <p>Robust data management tools and dashboards that give you full control over your digital assets.
-                    </p>
-                </div>
-                <div class="service-card reveal">
-                    <div class="icon-box"><i class="fas fa-tools"></i></div>
-                    <h3>Maintenance & Support</h3>
-                    <p>Long-term partnership with proactive maintenance to ensure your software remains secure and
-                        up-to-date.</p>
+                <div class="about-text">
+                    <span class="subtitle">Who I Am</span>
+                    <h2>A Creator Driven by <span class="gradient-text">Excellence</span></h2>
+                    <p>I am a passionate Software Engineer based in Bhopal, India, dedicated to bridging the gap between
+                        complex engineering and user-centric design. My journey in tech is driven by a simple mission:
+                        to architect solutions that empower businesses to scale globally.</p>
+                    <p>What makes my work unique is the blend of performance-first architecture and a keen eye for
+                        modern design aesthetics. I don't just write code; I build digital products that people love to
+                        use.</p>
+                    <div class="about-btns">
+                        <a href="https://github.com/pratham-sarankar" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-secondary">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/sarankar-developers-20b7633ab/" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-secondary">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Featured Apps Section -->
-    <section id="guides" class="section bg-light-dark">
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-light-dark">
         <div class="container">
             <div class="section-header">
-                <span class="subtitle">Our Portfolio</span>
-                <h2>Our Professional Applications</h2>
-                <p>Explore our highly-rated mobile applications available on the Google Play Store.</p>
+                <span class="subtitle">My Arsenal</span>
+                <h2>Skills & Technologies</h2>
             </div>
-            <div class="portfolio-grid">
-                <div class="service-card reveal">
-                    <h3>Amozea Wallpapers</h3>
-                    <p>Transform your device with stunning, high-quality wallpapers and an intuitive AR-based preview
-                        experience.
-                    </p>
-                    <a href="https://play.google.com/store/apps/details?id=com.amozea.wallpapers" target="_blank"
-                        rel="noopener noreferrer" class="btn-link">Download on Play Store <i
-                            class="fas fa-external-link-alt"></i></a>
+            <div class="skills-grid">
+                <div class="skill-card reveal">
+                    <i class="fab fa-flutter"></i>
+                    <span>Flutter</span>
                 </div>
-                <div class="service-card reveal">
-                    <h3>SnapPlay Offline Games</h3>
-                    <p>A collection of classic, addictive offline games designed for seamless performance and endless
-                        entertainment.
-                    </p>
-                    <a href="https://play.google.com/store/apps/details?id=com.snapplay.offline.games" target="_blank"
-                        rel="noopener noreferrer" class="btn-link">Download on Play Store <i
-                            class="fas fa-external-link-alt"></i></a>
+                <div class="skill-card reveal">
+                    <i class="fas fa-code"></i>
+                    <span>Dart</span>
+                </div>
+                <div class="skill-card reveal">
+                    <i class="fab fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-card reveal">
+                    <i class="fab fa-react"></i>
+                    <span>React</span>
+                </div>
+                <div class="skill-card reveal">
+                    <i class="fab fa-node-js"></i>
+                    <span>Node.js</span>
+                </div>
+                <div class="skill-card reveal">
+                    <i class="fas fa-database"></i>
+                    <span>Firebase</span>
+                </div>
+                <div class="skill-card reveal">
+                    <i class="fas fa-paint-brush"></i>
+                    <span>UI/UX Design</span>
+                </div>
+                <div class="skill-card reveal">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>App Security</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="section bg-light-dark">
+    <section id="portfolio" class="section">
         <div class="container">
             <div class="section-header">
-                <span class="subtitle">Our Work</span>
-                <h2>Featured Projects</h2>
+                <span class="subtitle">Latest Work</span>
+                <h2>Showcasing Creativity</h2>
             </div>
             <div class="portfolio-grid">
+                <!-- Amozea -->
+                <div class="portfolio-card reveal">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800"
+                            alt="Amozea Wallpapers">
+                    </div>
+                    <div class="project-info">
+                        <h3>Amozea Wallpapers</h3>
+                        <p>High-quality wallpaper application with AR preview features.</p>
+                        <ul class="tags">
+                            <li>Flutter</li>
+                            <li>AR</li>
+                            <li>Cloud Storage</li>
+                        </ul>
+                        <a href="https://play.google.com/store/apps/details?id=com.amozea.wallpapers" target="_blank"
+                            rel="noopener noreferrer" class="btn-link">View Project <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- SnapPlay -->
+                <div class="portfolio-card reveal">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1550745679-5652175bdd48?auto=format&fit=crop&q=80&w=800"
+                            alt="SnapPlay Offline Games">
+                    </div>
+                    <div class="project-info">
+                        <h3>SnapPlay Games</h3>
+                        <p>A collection of classic offline games for mobile users.</p>
+                        <ul class="tags">
+                            <li>Flutter</li>
+                            <li>Gaming</li>
+                            <li>Offline First</li>
+                        </ul>
+                        <a href="https://play.google.com/store/apps/details?id=com.snapplay.offline.games"
+                            target="_blank" rel="noopener noreferrer" class="btn-link">View Project <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
                 <!-- Munshi -->
                 <div class="portfolio-card reveal">
                     <div class="project-img">
@@ -199,281 +253,86 @@
                     </div>
                     <div class="project-info">
                         <h3>Munshi</h3>
-                        <p>Auto money management application for effortless financial tracking.</p>
+                        <p>Auto money management application for effortless tracking.</p>
                         <ul class="tags">
                             <li>Finance</li>
-                            <li>Mobile</li>
                             <li>Automation</li>
+                            <li>Analytics</li>
                         </ul>
                         <a href="https://play.google.com/store/apps/details?id=sarankar.app.munshi" target="_blank"
-                            rel="noopener noreferrer" class="btn-link">View on Play Store <i
-                                class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <!-- Student Training Platform -->
-                <div class="portfolio-card reveal">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&q=80&w=800"
-                            alt="Student Training Platform">
-                    </div>
-                    <div class="project-info">
-                        <h3>Student Training Platform</h3>
-                        <p>A comprehensive e-learning system with job modules and assessments.</p>
-                        <ul class="tags">
-                            <li>EdTech</li>
-                            <li>LMS</li>
-                            <li>Admin Dashboard</li>
-                        </ul>
+                            rel="noopener noreferrer" class="btn-link">View Project <i
+                                class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <!-- Zyrotech -->
                 <div class="portfolio-card reveal">
                     <div class="project-img">
                         <img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&q=80&w=800"
-                            alt="Zyrotech Trading Application">
+                            alt="Zyrotech Trading">
                     </div>
                     <div class="project-info">
                         <h3>Zyrotech</h3>
-                        <p>Advanced trading application designed for speed and reliability in the markets.</p>
+                        <p>Advanced trading application for real-time market data.</p>
                         <ul class="tags">
                             <li>FinTech</li>
-                            <li>Trading</li>
                             <li>Real-time</li>
+                            <li>WebSockets</li>
                         </ul>
-                    </div>
-                </div>
-                <!-- Play Store Rank Checker -->
-                <div class="portfolio-card reveal">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800"
-                            alt="Play Store Rank Checker">
-                    </div>
-                    <div class="project-info">
-                        <h3>Play Store Rank Checker</h3>
-                        <p>Web tool to track Android app rankings across various keywords on Google Play.</p>
-                        <ul class="tags">
-                            <li>Web Tool</li>
-                            <li>SEO</li>
-                            <li>Analytics</li>
-                        </ul>
+                        <span class="btn-link muted">Internal Tool <i class="fas fa-lock"></i></span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Ad Slot: Mid Page -->
-    <div class="container ad-container">
-        <ins class="adsbygoogle" data-ad-client="ca-pub-5747718526576102" data-ad-slot="MID_AD_SLOT_ID"
-            data-ad-format="auto" data-full-width-responsive="true"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-    </div>
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section bg-light-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Trust</span>
+                <h2>What People Say</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <p>Sarankar Developers delivered a top-notch application that exceeded our expectations in both
+                        performance and design.</p>
+                    <div class="client">
+                        <strong>Arjun Sharma</strong>
+                        <span>Startup Founder</span>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <p>Their expertise in Flutter is unmatched. The SnapPlay collection has been a huge hit with our
+                        offline users.</p>
+                    <div class="client">
+                        <strong>Priya Verma</strong>
+                        <span>Gaming Executive</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Insights Section (New) -->
-    <section id="insights" class="section bg-light-dark">
+    <!-- Insights/Blog Section -->
+    <section id="insights" class="section">
         <div class="container">
             <div class="section-header">
                 <span class="subtitle">Latest Insights</span>
-                <h2>Tech & Development Strategy</h2>
+                <h2>Tech & Strategy Updates</h2>
             </div>
-            <div class="services-grid">
-                <div class="service-card reveal">
-                    <h3>The Future of Cross-Platform Apps</h3>
-                    <p>In 2026, the debate between Native and Cross-Platform has shifted. Frameworks like Flutter and
-                        React Native are no longer just for MVPs; they are dominating the enterprise landscape. We
-                        explore how modern rendering engines like Impeller are closing the performance gap, allowing
-                        businesses to maintain a single codebase while delivering smooth 60FPS experiences on both iOS
-                        and Android. Choosing the right stack today determines your scalability tomorrow.</p>
-                    <a href="insights/cross-platform.html" class="btn-link">Read Full Insight <i
+            <div class="insights-grid">
+                <div class="insight-card reveal">
+                    <h3>The Future of Flutter in 2026</h3>
+                    <p>How Impeller and WASM are revolutionizing the cross-platform landscape.</p>
+                    <a href="insights/cross-platform.html" class="btn-link">Read More <i
                             class="fas fa-arrow-right"></i></a>
                 </div>
-                <div class="service-card reveal">
-                    <h3>Securing Your Digital Assets</h3>
-                    <p>Data breaches are costlier than ever. At Sarankar Developers, we prioritize a security-first
-                        architecture. This means implementing end-to-end encryption, multi-factor authentication, and
-                        robust API security from day one. In this insight, we break down the importance of 'Security by
-                        Design' and why proactive maintenance and 24/7 monitoring are the only ways to guarantee 99.9%
-                        uptime for cloud-based software solutions in a modern threat landscape.</p>
-                    <a href="insights/security.html" class="btn-link">Read Full Insight <i
-                            class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="service-card reveal">
-                    <h3>SEO for Single Page Apps</h3>
-                    <p>Modern web development often favors Single Page Applications (SPAs) for their speed and fluidity,
-                        but they can be a challenge for search engine crawlers. We've mastered the art of making SPAs
-                        SEO-friendly through Server-Side Rendering (SSR), dynamic meta tags, and optimized sitemaps.
-                        Learn how we ensure your high-performance web apps rank both locally and globally, ensuring your
-                        business stays visible and competitive in an increasingly crowded digital market.</p>
-                    <a href="insights/seo-spa.html" class="btn-link">Read Full Insight <i
-                            class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="service-card reveal">
-                    <h3>AI Integration in Modern Software</h3>
-                    <p>Artificial Intelligence is no longer a futuristic concept—it's a requirement for modern business
-                        tools. Whether it's automating customer support with Large Language Models (LLMs) or using
-                        predictive analytics to optimize supply chains, AI integration is transforming how software
-                        provides value. We focus on implementing practical, scalable AI solutions that solve real
-                        business problems without compromising on performance or user privacy.</p>
-                    <a href="insights/ai-integration.html" class="btn-link">Read Full Insight <i
-                            class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="service-card reveal">
-                    <h3>App Monetization Strategies</h3>
-                    <p>Choosing the right monetization model is critical. We explore hybrid models, ad placement
-                        optimization, and how to balance user experience with revenue generation in 2026's competitive
-                        app market.</p>
-                    <a href="insights/monetization.html" class="btn-link">Read Full Insight <i
-                            class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="service-card reveal">
-                    <h3>5G & Mobile App Performance</h3>
-                    <p>The 5G revolution is here. Learn how near-zero latency and massive bandwidth are enabling new
-                        categories of apps, from seamless AR to real-time cloud-processed mobile experiences.</p>
-                    <a href="insights/5g-mobile.html" class="btn-link">Read Full Insight <i
-                            class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="service-card reveal">
-                    <h3>Bhopal's Tech Transformation</h3>
-                    <p>The "City of Lakes" is rapidly becoming a central Indian tech hub. We explore how local
-                        talent, educational institutions, and new infrastructure are making Bhopal a rising star on
-                        India's technology map.</p>
-                    <a href="insights/bhopal-tech-hub.html" class="btn-link">Read Full Insight <i
-                            class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us Section -->
-    <section id="why-us" class="section">
-        <div class="container">
-            <div class="why-us-content">
-                <div class="why-us-text">
-                    <span class="subtitle">Our Story</span>
-                    <h2>A Bhopal-Based Studio Driven by Excellence</h2>
-                    <p>Sarankar Developers started as a
-                        specialized software studio in Bhopal, India, with a mission to bridge the gap between complex
-                        engineering and user-centric design. We don't just write code; we architect solutions that
-                        empower businesses to scale their digital presence globally.</p>
-                    <ul class="features-list">
-                        <li class="reveal">
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <h4>Production-Ready Applications</h4>
-                                <p>We don't just build MVPs; we build systems ready for thousands of users.</p>
-                            </div>
-                        </li>
-                        <li class="reveal">
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <h4>Clean & Modern UI/UX</h4>
-                                <p>Interfaces that are intuitive, accessible, and visually stunning.</p>
-                            </div>
-                        </li>
-                        <li class="reveal">
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <h4>Secure & Scalable Architecture</h4>
-                                <p>Built with modern security practices and ability to scale horizontally.</p>
-                            </div>
-                        </li>
-                        <li class="reveal">
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <h4>End-to-End Support</h4>
-                                <p>From ideation and design to deployment and ongoing maintenance.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="why-us-visual reveal">
-                    <div class="stats-card">
-                        <div class="stat-item">
-                            <span class="stat-num">100%</span>
-                            <span class="stat-desc">Client Satisfaction</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-num">24/7</span>
-                            <span class="stat-desc">Monitoring</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-num">Top</span>
-                            <span class="stat-desc">Security Protocol</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section (Trust & Value Signal) -->
-    <section id="faq" class="section">
-        <div class="container">
-            <div class="section-header">
-                <span class="subtitle">Questions?</span>
-                <h2>Frequently Asked Questions</h2>
-            </div>
-            <div class="faq-grid">
-                <div class="faq-item reveal">
-                    <h4>What services do Sarankar Developers provide?</h4>
-                    <p>We specialize in mobile app development (Flutter/Native), custom enterprise software, and
-                        high-performance web applications using modern stacks like React and Node.js.</p>
-                </div>
-                <div class="faq-item reveal">
-                    <h4>Where is the studio based?</h4>
-                    <p>Currently, Sarankar Developers is a Bhopal-based software studio, serving clients globally from
-                        our headquarters in Madhya Pradesh, India.</p>
-                </div>
-                <div class="faq-item reveal">
-                    <h4>Do you provide post-deployment support?</h4>
-                    <p>Yes, all our production-ready applications come with dedicated maintenance cycles to ensure
-                        security, high uptime, and regular performance optimization.</p>
-                </div>
-                <div class="faq-item reveal">
-                    <h4>How do you handle security for digital assets?</h4>
-                    <p>We follow a 'Security by Design' philosophy, implementing end-to-end encryption, multi-factor
-                        authentication, and robust API security from the first day of development.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Leadership Section -->
-    <section id="team" class="section bg-light-dark">
-        <div class="container">
-            <div class="section-header">
-                <span class="subtitle">Leadership</span>
-                <h2>The Minds Behind Sarankar Developers</h2>
-            </div>
-            <div class="team-grid">
-                <div class="team-card reveal">
-                    <div class="member-img">
-                        <img src="assets/pratham.jpg" alt="Pratham Sarankar">
-                    </div>
-                    <div class="member-info">
-                        <h3>Pratham Sarankar</h3>
-                        <span class="role">CEO</span>
-                    </div>
-                </div>
-                <div class="team-card reveal">
-                    <div class="member-img">
-                        <img src="assets/surekha.jpg" alt="Surekha Sarankar">
-                    </div>
-                    <div class="member-info">
-                        <h3>Surekha Sarankar</h3>
-                        <span class="role">CMO</span>
-                    </div>
-                </div>
-                <div class="team-card reveal">
-                    <div class="member-img">
-                        <img src="assets/yash.jpg" alt="Yash Sarankar">
-                    </div>
-                    <div class="member-info">
-                        <h3>Yash Sarankar</h3>
-                        <span class="role">CTO</span>
-                    </div>
+                <div class="insight-card reveal">
+                    <h3>Security First Architecture</h3>
+                    <p>Protecting user data in the modern threat landscape.</p>
+                    <a href="insights/security.html" class="btn-link">Read More <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -531,8 +390,7 @@
         <div class="container">
             <div class="footer-bottom">
                 <p>&copy; 2026 Sarankar Developers. All rights reserved. | <a href="privacy.html">Privacy Policy</a> |
-                    <a href="terms.html">Terms of Service</a> | <a href="sitemap.xml">Sitemap</a>
-                </p>
+                    <a href="terms.html">Terms of Service</a> | <a href="sitemap.xml">Sitemap</a></p>
                 <div class="social-links">
                     <a href="https://www.linkedin.com/in/sarankar-developers-20b7633ab/" target="_blank"
                         rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
