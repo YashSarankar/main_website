@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5747718526576102"
+        crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Sarankar Developers</title>
+    <meta name="description"
+        content="Get in touch with Sarankar Developers. Whether you have a project in mind or just want to say hello, we're here to help.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            padding-top: 151px;
+        }
+
+        .contact-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: var(--bg-light-dark);
+            border-radius: 16px;
+            border: 1px solid var(--glass-border);
+        }
+
+        h1 {
+            margin-bottom: 2rem;
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .info-card {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid var(--glass-border);
+        }
+
+        .info-card h3 {
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-item i {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-right: 1rem;
+            width: 30px;
+            text-align: center;
+        }
+
+        .contact-item div span {
+            display: block;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .contact-item div a {
+            font-size: 1.1rem;
+            color: var(--text-color);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-item div a:hover {
+            color: var(--primary-color);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .contact-form-page {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .form-group-page {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .form-group-page label {
+            font-weight: 500;
+        }
+
+        .form-group-page input,
+        .form-group-page textarea {
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--glass-border);
+            border-radius: 8px;
+            color: white;
+            font-family: inherit;
+        }
+
+        .form-group-page textarea {
+            resize: vertical;
+        }
+    </style>
+</head>
+
+<body class="dark-theme">
+    <nav id="navbar" class="scrolled">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" class="logo-text">
+                    <img src="assets/sarankar_logo-removebg-preview.png" alt="Sarankar Developers Logo">
+                    Sarankar<span>Developers</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Home</a>
+        <div class="contact-container">
+            <h1 class="gradient-text">Get In Touch</h1>
+            <p style="text-align: center; margin-bottom: 3rem;">Have a project in mind or want to learn more about our
+                services? Let's connect.</p>
+
+            <div class="contact-grid">
+                <div class="info-card">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <span>Email Address</span>
+                            <a href="mailto:pratham@sarankar.com">pratham@sarankar.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <span>Phone Number</span>
+                            <a href="tel:+918085042656">+91 8085042656</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-location-dot"></i>
+                        <div>
+                            <span>Our Office</span>
+                            <a href="#">Bhopal, Madhya Pradesh, India</a>
+                        </div>
+                    </div>
+
+                    <div class="social-links" style="margin-top: 2rem; display: flex; gap: 1rem;">
+                        <a href="https://www.linkedin.com/in/sarankar-developers-20b7633ab/" target="_blank"
+                            style="font-size: 1.5rem; color: var(--text-muted);"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/pratham-sarankar" target="_blank"
+                            style="font-size: 1.5rem; color: var(--text-muted);"><i class="fab fa-github"></i></a>
+                        <a href="https://x.com/SarankarD" target="_blank"
+                            style="font-size: 1.5rem; color: var(--text-muted);"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="form-container">
+                    <form id="contact-form-page" class="contact-form-page">
+                        <div class="form-group-page">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group-page">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group-page">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required>
+                        </div>
+                        <div class="form-group-page">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your project..." rows="5"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <footer style="margin-top: 100px;">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sarankar Developers. All rights reserved. | <a href="about.html">About Us</a> | <a href="contact.html">Contact Us</a> | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a> | <a href="disclaimer.html">Disclaimer</a> | <a href="sitemap.xml">Sitemap</a></p>
+                <div class="social-links" style="margin-top: 20px; display: flex; gap: 20px; justify-content: center;">
+                    <a href="https://www.linkedin.com/in/sarankar-developers-20b7633ab/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/pratham-sarankar" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a href="https://x.com/SarankarD" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/sarankardevelopers/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+

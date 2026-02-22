@@ -171,6 +171,10 @@ a {
     gap: 2rem;
 }
 
+.menu-toggle {
+    display: none;
+}
+
 .nav-links li a {
     font-weight: 600;
     color: var(--text-main);
@@ -259,6 +263,12 @@ a {
     margin-bottom: 1.5rem;
 }
 
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+}
+
 .hero-content p {
     font-size: 1.2rem;
     color: var(--text-muted);
@@ -281,6 +291,7 @@ a {
     border-radius: 16px;
     padding: 1.5rem;
     box-shadow: var(--shadow);
+    overflow-x: hidden;
 }
 
 .viz-header {
@@ -533,7 +544,7 @@ a {
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2.5rem;
 }
 
@@ -668,7 +679,7 @@ a {
 /* Testimonials */
 .testimonials-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
 }
 
@@ -710,7 +721,7 @@ a {
 /* Insights / Updates */
 .insights-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
 }
 
@@ -838,6 +849,13 @@ footer {
 .footer-bottom p {
     color: var(--text-muted);
     font-size: 0.9rem;
+    line-height: 2;
+}
+
+.footer-bottom a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 2px 0;
 }
 
 .social-links {
@@ -931,14 +949,14 @@ footer {
 /* Responsive */
 @media (max-width: 1024px) {
     .container {
-        padding: 0 40px;
+        padding: 0 20px;
     }
 
     .hero .container,
     .about-grid,
     .contact-wrapper {
         grid-template-columns: 1fr;
-        gap: 4rem;
+        gap: 3rem;
         text-align: center;
     }
 
@@ -954,6 +972,17 @@ footer {
     .about-image {
         max-width: 500px;
         margin: 0 auto;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .btn {
+        width: 100%;
     }
 }
 
@@ -1014,4 +1043,31 @@ footer {
 
 .no-scroll {
     overflow: hidden;
+}
+
+/* Article Page Overrides for Mobile */
+@media (max-width: 768px) {
+    body .article-container {
+        padding: 1.5rem !important;
+        border-radius: 0 !important;
+        border-left: none !important;
+        border-right: none !important;
+    }
+
+    body .article-container h1 {
+        font-size: 1.8rem !important;
+    }
+
+    body .article-container h2 {
+        font-size: 1.5rem !important;
+    }
+
+    body .article-container p {
+        font-size: 1rem !important;
+    }
+
+    body.dark-theme,
+    body.light-theme {
+        padding-top: 100px !important;
+    }
 }
