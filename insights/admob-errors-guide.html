@@ -116,11 +116,30 @@
 </head>
 
 <body class="dark-theme">
-    <nav id="navbar" class="scrolled">
+            <nav id="navbar">
         <div class="container">
-            <div class="logo"><a href="../index.html" class="logo-text"><img
-                        src="../assets/sarankar_logo-removebg-preview.png"
-                        alt="Sarankar Developers Logo">Sarankar<span>Developers</span></a></div>
+            <div class="logo">
+                <a href="../index.html" class="logo-text">
+                    <img src="../assets/sarankar_logo-removebg-preview.png" alt="Sarankar Developers Logo">
+                    Sarankar<span>Developers</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../index.html#portfolio">Work</a></li>
+                <li><a href="../index.html#insights">Insights</a></li>
+                <li><a href="../contact.html" class="btn btn-primary">Contact Us</a></li>
+                <li class="theme-switch">
+                    <button id="theme-toggle" aria-label="Toggle Theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
     </nav>
 
@@ -248,6 +267,19 @@
             </div>
         </div>
     </footer>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-consent-banner" class="cookie-banner">
+        <div class="cookie-content">
+            <p>We use cookies to personalize content and ads, to provide social media features and to analyze our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you've provided to them or that they've collected from your use of their services. By continuing to use our website, you consent to our cookies. <a href="../privacy.html">Learn more</a>.</p>
+            <div class="cookie-buttons">
+                <button id="accept-cookies" class="btn btn-primary">Accept All</button>
+                <button id="decline-cookies" class="btn btn-secondary">Essential Only</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

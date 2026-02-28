@@ -1071,3 +1071,60 @@ footer {
         padding-top: 100px !important;
     }
 }
+
+/* Cookie Banner Styles */
+.cookie-banner {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background: var(--bg-card);
+    border-top: 1px solid var(--glass-border);
+    padding: 1.5rem;
+    z-index: 9999;
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.2);
+    transition: bottom 0.5s ease-in-out;
+}
+
+.cookie-banner.show {
+    bottom: 0;
+}
+
+.cookie-content {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.cookie-content p {
+    flex: 1 1 300px;
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--text-main);
+}
+
+.cookie-content a {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.cookie-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+@media (max-width: 600px) {
+    .cookie-buttons {
+        width: 100%;
+        justify-content: stretch;
+    }
+
+    .cookie-buttons .btn {
+        flex: 1;
+        text-align: center;
+    }
+}

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5747718526576102"
+        crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastering REST API Design: Best Practices for 2026 | Sarankar Developers</title>
+    <meta name="description"
+        content="A comprehensive guide to designing RESTful APIs in 2026. Learn about versioning, status codes, pagination, authentication, and building scalable backends.">
+    <link rel="canonical" href="https://sarankar.com/insights/api-design-best-practices.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body {
+            padding-top: 151px;
+        }
+
+        .article-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2.5rem;
+            background: var(--bg-light-dark);
+            border-radius: 16px;
+            border: 1px solid var(--glass-border);
+        }
+
+        h1 {
+            margin-bottom: 2rem;
+            font-size: 2.8rem;
+            line-height: 1.2;
+        }
+
+        h2 {
+            margin-top: 2.5rem;
+            margin-bottom: 1.2rem;
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            border-bottom: 1px solid var(--glass-border);
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            color: #fff;
+            font-size: 1.4rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        ul,
+        ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+        }
+
+        li {
+            margin-bottom: 1rem;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            border: 1px solid var(--glass-border);
+        }
+
+        code {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+            color: var(--primary-color);
+        }
+
+        pre {
+            background: #1e1e1e;
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--glass-border);
+        }
+
+        pre code {
+            background: transparent;
+            padding: 0;
+            color: #d4d4d4;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body class="dark-theme">
+    <nav id="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html" class="logo-text">
+                    <img src="../assets/sarankar_logo-removebg-preview.png" alt="Sarankar Developers Logo">
+                    Sarankar<span>Developers</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../index.html#portfolio">Work</a></li>
+                <li><a href="../index.html#insights">Insights</a></li>
+                <li><a href="../contact.html" class="btn btn-primary">Contact Us</a></li>
+                <li class="theme-switch">
+                    <button id="theme-toggle" aria-label="Toggle Theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <a href="../index.html#insights" class="back-link"><i class="fas fa-arrow-left"></i> Back to Insights</a>
+        <article class="article-container">
+            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=1600"
+                alt="Server Infrastructure" class="hero-image">
+            <h1 class="gradient-text">Mastering REST API Design: Best Practices for 2026</h1>
+
+            <p>APIs are the fundamental building blocks of modern software architecture. Whether you're building a
+                mobile app with Flutter, a web dashboard with React, or microservices that need to communicate with each
+                other, a well-designed REST API is non-negotiable. Poorly designed APIs lead to complex client code,
+                performance bottlenecks, and security vulnerabilities.</p>
+            <p>At Sarankar Developers, we've designed backend systems that handle millions of requests. In this guide,
+                we share the definitive best practices for designing robust, scalable, and developer-friendly REST APIs
+                in 2026.</p>
+
+            <h2>1. Use Nouns, Not Verbs, for Resources</h2>
+            <p>REST (Representational State Transfer) is resource-oriented. The URL should represent the resource you
+                are interacting with, and the HTTP method (GET, POST, PUT, PATCH, DELETE) should indicate the action.
+                Never use verbs in your endpoint paths.</p>
+            <ul>
+                <li>❌ <strong>Bad:</strong> <code>/getAllUsers</code>, <code>/createUser</code>,
+                    <code>/deleteUser/123</code></li>
+                <li>✅ <strong>Good:</strong> <code>GET /users</code>, <code>POST /users</code>,
+                    <code>DELETE /users/123</code></li>
+            </ul>
+
+            <h2>2. Version Your API from Day One</h2>
+            <p>Once your API is consumed by a client (especially a mobile app), you cannot easily change the response
+                structure without breaking the client. Always version your API. The most common and visible approach is
+                URL versioning.</p>
+            <pre><code>https://api.sarankar.com/v1/users
+https://api.sarankar.com/v2/users</code></pre>
+            <p>When you need to make breaking changes (e.g., changing a field type from integer to string, or removing a
+                field entirely), you release `v2` and keep `v1` running until clients have migrated.</p>
+
+            <h2>3. Use Standard HTTP Status Codes</h2>
+            <p>Don't return a `200 OK` with an error message in the body. Use HTTP status codes correctly so that client
+                libraries (like Axios or Dart's HTTP client) can automatically route success and error flows.</p>
+            <ul>
+                <li><strong>200 OK:</strong> General success.</li>
+                <li><strong>201 Created:</strong> Successful creation of a resource (e.g., after a POST).</li>
+                <li><strong>204 No Content:</strong> Success, but no data is returned (e.g., after a DELETE).</li>
+                <li><strong>400 Bad Request:</strong> The client sent invalid data.</li>
+                <li><strong>401 Unauthorized:</strong> The user is not authenticated (missing or invalid token).</li>
+                <li><strong>403 Forbidden:</strong> The user is authenticated but lacks permission.</li>
+                <li><strong>404 Not Found:</strong> The resource does not exist.</li>
+                <li><strong>429 Too Many Requests:</strong> Rate limiting exceeded.</li>
+                <li><strong>500 Internal Server Error:</strong> Something broke on the server.</li>
+            </ul>
+
+            <h2>4. Consistent and Helpful Error Responses</h2>
+            <p>When a `400` or `500` series error occurs, you must return a structured JSON response that tells the
+                developer exactly what went wrong. Do not expose internal stack traces to the public.</p>
+            <pre><code>{
+  "error": {
+    "code": "validation_failed",
+    "message": "The provided email address is invalid.",
+    "details": {
+      "field": "email",
+      "issue": "Missing '@' symbol"
+    }
+  }
+}</code></pre>
+
+            <h2>5. Pagination, Filtering, and Sorting</h2>
+            <p>Never return thousands of records in a single GET request. It will crash the server and the client.
+                Always implement pagination. In 2026, cursor-based pagination is preferred over offset-based pagination
+                for large datasets because it is faster and doesn't skip/duplicate items if the data changes while
+                paging.</p>
+            <p>For filtering and sorting, use query parameters:</p>
+            <ul>
+                <li><strong>Filtering:</strong> <code>GET /users?status=active&role=admin</code></li>
+                <li><strong>Sorting:</strong> <code>GET /users?sort=-createdAt</code> (the minus indicates descending
+                    order)</li>
+                <li><strong>Pagination:</strong> <code>GET /users?limit=50&cursor=abc123xyz</code></li>
+            </ul>
+
+            <h2>6. Secure Your API</h2>
+            <p>Security is not an afterthought. Every endpoint must be secured.</p>
+            <ul>
+                <li><strong>HTTPS Only:</strong> Never serve APIs over HTTP. Use TLS 1.3.</li>
+                <li><strong>Authentication:</strong> Use JWT (JSON Web Tokens) or OAuth2 for stateless authentication.
+                </li>
+                <li><strong>Rate Limiting:</strong> Protect your API from brute-force attacks and DDOS by limiting
+                    requests per IP or user token.</li>
+                <li><strong>Input Validation:</strong> Never trust client data. Validate every payload on the backend
+                    using libraries like Zod (Node.js) or Pydantic (Python).</li>
+            </ul>
+
+            <h2>Conclusion</h2>
+            <p>Designing a great API requires discipline. It's about establishing consistency so that any developer
+                consuming your API can guess how it works without reading the documentation. By adhering to REST
+                conventions, utilizing proper HTTP status codes, and building with security and scalability in mind, you
+                create a foundation that can support your applications for years to come.</p>
+
+            <div class="cta-box"
+                style="margin-top: 40px; padding: 20px; border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border); background: rgba(255,255,255,0.02); border-radius: 8px;">
+                <h4 style="margin-bottom: 10px; color: var(--primary-color);">Building a Complex Backend?</h4>
+                <p style="margin-bottom: 0;">Our team specializes in designing high-performance, secure backend
+                    architectures and APIs. Contact us at <a href="mailto:pratham@sarankar.com"
+                        style="color: var(--primary-color); font-weight: bold;">pratham@sarankar.com</a> to discuss your
+                    project.</p>
+            </div>
+        </article>
+    </div>
+
+    <footer style="margin-top: 100px;">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sarankar Developers. All rights reserved. | <a href="../about.html">About Us</a> | <a
+                        href="../contact.html">Contact Us</a> | <a href="../privacy.html">Privacy Policy</a> | <a
+                        href="../terms.html">Terms of Service</a> | <a href="../disclaimer.html">Disclaimer</a></p>
+                <div class="social-links" style="margin-top: 20px; display: flex; gap: 20px; justify-content: center;">
+                    <a href="https://www.linkedin.com/in/sarankar-developers-20b7633ab/" target="_blank"
+                        rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/pratham-sarankar" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://x.com/SarankarD" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/sarankardevelopers/" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-consent-banner" class="cookie-banner">
+        <div class="cookie-content">
+            <p>We use cookies to personalize content and ads, to provide social media features and to analyze our
+                traffic. We also share information about your use of our site with our social media, advertising and
+                analytics partners who may combine it with other information that you've provided to them or that
+                they've collected from your use of their services. By continuing to use our website, you consent to our
+                cookies. <a href="../privacy.html">Learn more</a>.</p>
+            <div class="cookie-buttons">
+                <button id="accept-cookies" class="btn btn-primary">Accept All</button>
+                <button id="decline-cookies" class="btn btn-secondary">Essential Only</button>
+            </div>
+        </div>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

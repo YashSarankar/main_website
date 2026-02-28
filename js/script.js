@@ -138,3 +138,32 @@ if (backToTop) {
         });
     });
 }
+
+// Cookie Consent Banner Logic
+document.addEventListener("DOMContentLoaded", function () {
+    const cookieBanner = document.getElementById("cookie-consent-banner");
+    const acceptBtn = document.getElementById("accept-cookies");
+    const declineBtn = document.getElementById("decline-cookies");
+
+    if (cookieBanner && acceptBtn && declineBtn) {
+        // Check if user has already made a choice
+        const cookieConsent = localStorage.getItem("cookie_consent");
+
+        if (!cookieConsent) {
+            // Show banner after a slight delay
+            setTimeout(() => {
+                cookieBanner.style.bottom = "0";
+            }, 1000);
+        }
+
+        acceptBtn.addEventListener("click", function () {
+            localStorage.setItem("cookie_consent", "accepted");
+            cookieBanner.style.bottom = "-100%";
+        });
+
+        declineBtn.addEventListener("click", function () {
+            localStorage.setItem("cookie_consent", "declined");
+            cookieBanner.style.bottom = "-100%";
+        });
+    }
+});
