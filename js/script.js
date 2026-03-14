@@ -18,6 +18,17 @@ if (mobileMenu) {
         navLinks.classList.toggle('active');
         document.body.classList.toggle('no-scroll');
     });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (navLinks.classList.contains('active') && 
+            !navLinks.contains(e.target) && 
+            !mobileMenu.contains(e.target)) {
+            mobileMenu.classList.remove('active');
+            navLinks.classList.remove('active');
+            document.body.classList.remove('no-scroll');
+        }
+    });
 }
 
 // Theme Toggle Logic
