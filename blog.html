@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9441953606119572"
+        crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights & Tech Tutorials | Sarankar Developers Blog</title>
+    <meta name="description"
+        content="Expert insights on Flutter development, App Monetization, UI/UX design, and software engineering. Stay updated with the latest trends at Sarankar Developers.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            padding-top: 151px;
+        }
+
+        .blog-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .blog-header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .blog-header p {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 5rem;
+        }
+
+        .blog-card {
+            background: var(--bg-light-dark);
+            border-radius: 16px;
+            border: 1px solid var(--glass-border);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .blog-card-content {
+            padding: 2rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-card-tag {
+            color: var(--primary-color);
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+
+        .blog-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+
+        .blog-card p {
+            color: var(--text-muted);
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .blog-card-footer {
+            margin-top: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .btn-read-more {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: color 0.3s;
+        }
+
+        .btn-read-more:hover {
+            color: var(--primary-color);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+            font-weight: 600;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body class="dark-theme">
+    <nav id="navbar" class="scrolled">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" class="logo-text">
+                    <img src="assets/sarankar_logo-removebg-preview.png" alt="Sarankar Developers Logo">
+                    Sarankar<span>Developers</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html" class="active">Insights</a></li>
+                <li><a href="contact.html" class="btn btn-primary">Contact Us</a></li>
+                <li class="theme-switch">
+                    <button id="theme-toggle" aria-label="Toggle Theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Home</a>
+
+        <header class="blog-header">
+            <h1 class="gradient-text">Tech Insights</h1>
+            <p>Deep dives into mobile engineering, monetization strategies, and the future of digital experiences.</p>
+        </header>
+
+        <div class="blog-grid">
+            <!-- category: Flutter Development -->
+            <article class="blog-card">
+                <div class="blog-card-content">
+                    <span class="blog-card-tag">Flutter Development</span>
+                    <h3>Riverpod vs Provider vs BLoC</h3>
+                    <p>The definitive 2026 comparison of state management solutions for Flutter.</p>
+                    <div class="blog-card-footer">
+                        <a href="insights/riverpod-vs-provider-vs-bloc.html" class="btn-read-more">Read Article <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-card-content">
+                    <span class="blog-card-tag">Flutter Development</span>
+                    <h3>Build a Monetized App from Scratch</h3>
+                    <p>The 2026 blueprint for building profitable apps with Flutter.</p>
+                    <div class="blog-card-footer">
+                        <a href="insights/monetized-flutter-app-scratch.html" class="btn-read-more">Read Article <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-card-content">
+                    <span class="blog-card-tag">Flutter Development</span>
+                    <h3>Offline-First Flutter Apps</h3>
+                    <p>How to use Hive, SQFlite and caching for resilient mobile experiences.</p>
+                    <div class="blog-card-footer">
+                        <a href="insights/offline-support-flutter.html" class="btn-read-more">Read Article <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-card-content">
+                    <span class="blog-card-tag">Flutter Development</span>
+                    <h3>Mastering Flutter Animations</h3>
+                    <p>Transition from implicit animations to high-performance Rive designs.</p>
+                    <div class="blog-card-footer">
+                        <a href="insights/flutter-animations-guide.html" class="btn-read-more">Read Article <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-card-content">
+                    <span class="blog-card-tag">Flutter Development</span>
+                    <h3>Flutter Performance Optimization</h3>
+                    <p>Impeller, WASM, and expert-level optimization for constant 120 FPS.</p>
+                    <div class="blog-card-footer">
+                        <a href="insights/flutter-performance-optimization.html" class="btn-read-more">Read Article <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-card-content">
+                    <span class="blog-card-tag">Flutter Development</span>
+                    <h3>State Management: A Breakdown</h3>
+                    <p>Choosing the right tool: Provider, Riverpod, BLoC, or GetX.</p>
+                    <div class="blog-card-footer">
+                        <a href="insights/flutter-state-management.html" class="btn-read-more">Read Article <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- category: Monetization -->
+            <article class="blog-card">
+                <div class="blog-card-content">
+                    <span class="blog-card-tag">Monetization</span>
+                    <h3>2026 AdMob Setup Guide</h3>
+                    <p>A technical step-by-step masterclass in Google AdMob for Flutter.</p>
+                    <div class="blog-card-footer">
+                        <a href="insights/admob-setup-flutter.html" class="btn-read-more">Read Article <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-card-content">
+                    <span class="blog-card-tag">Monetization</span>
+                    <h3>How to Increase App eCPM</h3>
+                    <p>Mediation, floor pricing, and targeting high-yield audiences globally.</p>
+                    <div class="blog-card-footer">
+                        <a href="insights/how-to-increase-ecpm.html" class="btn-read-more">Read Article <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-card-content">
+                    <span class="blog-card-tag">Monetization</span>
+                    <h3>Mistakes Killing App Revenue</h3>
+                    <p>Avoid these 5 common pitfalls that are hurting your monetization.</p>
+                    <div class="blog-card-footer">
+                        <a href="insights/mistakes-killing-app-revenue.html" class="btn-read-more">Read Article <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-card-content">
+                    <span class="blog-card-tag">Monetization</span>
+                    <h3>Ad Placement Strategies</h3>
+                    <p>Balancing revenue and UX with native ads and exit interstitials.</p>
+                    <div class="blog-card-footer">
+                        <a href="insights/ad-placement-strategies.html" class="btn-read-more">Read Article <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-card-content">
+                    <span class="blog-card-tag">Monetization</span>
+                    <h3>Interstitial vs Rewarded Ads</h3>
+                    <p>When to use which format for the highest conversion and retention.</p>
+                    <div class="blog-card-footer">
+                        <a href="insights/interstitial-vs-rewarded-ads.html" class="btn-read-more">Read Article <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-card-content">
+                    <span class="blog-card-tag">Monetization</span>
+                    <h3>Mastering AdMob "No Fill" Error</h3>
+                    <p>10 advanced troubleshooting steps to restore your revenue flow.</p>
+                    <div class="blog-card-footer">
+                        <a href="insights/admob-no-fill-guide-2026.html" class="btn-read-more">Read Article <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-card-content">
+                    <span class="blog-card-tag">Monetization</span>
+                    <h3>Hybrid Monetization Models</h3>
+                    <p>Combining Ads, IAP, and Subscriptions for long-term LTV growth.</p>
+                    <div class="blog-card-footer">
+                        <a href="insights/hybrid-app-monetization.html" class="btn-read-more">Read Article <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- category: Strategy & UX -->
+            <article class="blog-card">
+                <div class="blog-card-content">
+                    <span class="blog-card-tag">Strategy</span>
+                    <h3>Clean Architecture Guide</h3>
+                    <p>Designing maintainable, decoupled, and testable mobile foundations.</p>
+                    <div class="blog-card-footer">
+                        <a href="insights/clean-architecture-guide.html" class="btn-read-more">Read Article <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-card-content">
+                    <span class="blog-card-tag">Strategy</span>
+                    <h3>AI Integration Best Practices</h3>
+                    <p>Moving beyond hype into sustainable AI-driven business value.</p>
+                    <div class="blog-card-footer">
+                        <a href="insights/ai-integration.html" class="btn-read-more">Read Article <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-card-content">
+                    <span class="blog-card-tag">Strategy</span>
+                    <h3>REST API Design: 2026 Edition</h3>
+                    <p>Versioning, security, and scalability for modern backend systems.</p>
+                    <div class="blog-card-footer">
+                        <a href="insights/api-design-best-practices.html" class="btn-read-more">Read Article <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-card-content">
+                    <span class="blog-card-tag">UX Design</span>
+                    <h3>The Importance of UI/UX</h3>
+                    <p>Why design is the primary differentiator in the 2026 marketplace.</p>
+                    <div class="blog-card-footer">
+                        <a href="insights/ui-ux-importance.html" class="btn-read-more">Read Article <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-card-content">
+                    <span class="blog-card-tag">Deployment</span>
+                    <h3>Vercel Deployment Guide</h3>
+                    <p>Why Vercel is the top choice for deployment and edge scaling.</p>
+                    <div class="blog-card-footer">
+                        <a href="insights/vercel-deployment-guide.html" class="btn-read-more">Read Article <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- category: General Tech -->
+            <article class="blog-card">
+                <div class="blog-card-content">
+                    <span class="blog-card-tag">General Tech</span>
+                    <h3>The 5G Mobile Revolution</h3>
+                    <p>How ultra-low latency is redefining mobile app architecture.</p>
+                    <div class="blog-card-footer">
+                        <a href="insights/5g-mobile.html" class="btn-read-more">Read Article <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-card-content">
+                    <span class="blog-card-tag">Development</span>
+                    <h3>SEO for Modern Apps</h3>
+                    <p>How to rank your JavaScript-heavy applications on Google Search.</p>
+                    <div class="blog-card-footer">
+                        <a href="insights/seo-spa.html" class="btn-read-more">Read Article <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-card-content">
+                    <span class="blog-card-tag">Bhopal Tech</span>
+                    <h3>Bhopal: The New Tech Hub</h3>
+                    <p>Analyzing the rising engineering landscape of Central India.</p>
+                    <div class="blog-card-footer">
+                        <a href="insights/bhopal-tech-hub.html" class="btn-read-more">Read Article <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-card-content">
+                    <span class="blog-card-tag">Foundations</span>
+                    <h3>Security First Architecture</h3>
+                    <p>Protecting user data in the modern threat landscape.</p>
+                    <div class="blog-card-footer">
+                        <a href="insights/security.html" class="btn-read-more">Read Article <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-card-content">
+                    <span class="blog-card-tag">Flutter</span>
+                    <h3>Flutter Play Store Guide</h3>
+                    <p>The ultimate step-by-step roadmap to publishing your app in 2026.</p>
+                    <div class="blog-card-footer">
+                        <a href="insights/flutter-play-store-guide.html" class="btn-read-more">Read Article <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-card-content">
+                    <span class="blog-card-tag">Monetization</span>
+                    <h3>Fixing AdMob Errors</h3>
+                    <p>Mastering monetization and solving common account issues.</p>
+                    <div class="blog-card-footer">
+                        <a href="insights/admob-errors-guide.html" class="btn-read-more">Read Article <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-card-content">
+                    <span class="blog-card-tag">Strategy</span>
+                    <h3>Cross-Platform Evolution</h3>
+                    <p>Why Flutter remains the top choice for business scalability in 2026.</p>
+                    <div class="blog-card-footer">
+                        <a href="insights/cross-platform.html" class="btn-read-more">Read Article <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-card-content">
+                    <span class="blog-card-tag">Performance</span>
+                    <h3>Universal App Performance</h3>
+                    <p>Optimization techniques that apply across all mobile frameworks.</p>
+                    <div class="blog-card-footer">
+                        <a href="insights/app-performance.html" class="btn-read-more">Read Article <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <footer class="mt-100">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sarankar Developers. All rights reserved. | <a href="about.html">About Us</a> | <a
+                        href="contact.html">Contact Us</a> | <a href="privacy.html">Privacy Policy</a> | <a
+                        href="terms.html">Terms of Service</a> | <a href="disclaimer.html">Disclaimer</a></p>
+                <div class="footer-social-links">
+                    <a href="https://www.linkedin.com/in/sarankar-developers-20b7633ab/" target="_blank"
+                        rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/pratham-sarankar" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://x.com/SarankarD" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/sarankardevelopers/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
