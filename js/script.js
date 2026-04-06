@@ -107,24 +107,48 @@ if (contactForm) {
     });
 }
 
-// Smooth scrolling for all anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+// Smart navigation for all anchor links
+document.querySelectorAll('a[href]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        e.preventDefault();
+        try {
+            const currentUrl = new URL(window.location.href);
+            const targetUrl = new URL(this.getAttribute('href'), window.location.href);
 
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            window.scrollTo({
-                top: target.offsetTop - 80,
-                behavior: 'smooth'
-            });
+            // Is it pointing to the same page? (Treat 'index.html' and root '/' as the same)
+            let currentPath = currentUrl.pathname.endsWith('/') ? currentUrl.pathname + 'index.html' : currentUrl.pathname;
+            let targetPath = targetUrl.pathname.endsWith('/') ? targetUrl.pathname + 'index.html' : targetUrl.pathname;
 
-            // Close mobile menu if open
-            if (navLinks.classList.contains('active')) {
-                mobileMenu.classList.remove('active');
-                navLinks.classList.remove('active');
-                document.body.classList.remove('no-scroll');
+            if (currentPath === targetPath && currentUrl.host === targetUrl.host) {
+                e.preventDefault();
+                
+                if (targetUrl.hash) {
+                    // Scroll to specific section on the same page
+                    const targetEl = document.querySelector(targetUrl.hash);
+                    if (targetEl) {
+                        history.pushState(null, null, targetUrl.hash);
+                        window.scrollTo({
+                            top: targetEl.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                } else {
+                    // Scroll to top if clicking a link to the exact same page without a hash
+                    history.pushState(null, null, targetUrl.pathname);
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                }
+
+                // Close mobile menu if open
+                if (navLinks && navLinks.classList.contains('active')) {
+                    mobileMenu.classList.remove('active');
+                    navLinks.classList.remove('active');
+                    document.body.classList.remove('no-scroll');
+                }
             }
+        } catch (error) {
+            // Ignore invalid URLs
         }
     });
 });
