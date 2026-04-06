@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="google-adsense-account" content="ca-pub-9441953606119572">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Sarankar Developers</title>
+    <meta name="description" content="The page you're looking for doesn't exist. Head back to Sarankar Developers to explore our Flutter development insights and services.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+        }
+        .error-wrapper { max-width: 600px; }
+        .error-code {
+            font-family: 'Outfit', sans-serif;
+            font-size: clamp(6rem, 20vw, 10rem);
+            font-weight: 800;
+            line-height: 1;
+            background: linear-gradient(135deg, #3b82f6, #a855f7);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0;
+        }
+        .error-title { font-size: clamp(1.5rem, 4vw, 2.2rem); margin: 1rem 0 1.2rem; }
+        .error-desc { color: var(--text-muted); font-size: 1.1rem; line-height: 1.7; margin-bottom: 2.5rem; }
+        .error-links { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+        .floating-icon {
+            font-size: 3rem;
+            animation: float 3s ease-in-out infinite;
+            display: block;
+            margin-bottom: 1.5rem;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+    </style>
+</head>
+<body class="dark-theme">
+    <nav id="navbar" class="scrolled">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" class="logo-text">
+                    <img src="assets/sarankar_logo-removebg-preview.png" alt="Sarankar Developers Logo">
+                    Sarankar<span>Developers</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#portfolio">Work</a></li>
+                <li><a href="blog.html">Insights</a></li>
+                <li><a href="contact.html" class="btn btn-primary">Contact Us</a></li>
+                <li class="theme-switch">
+                    <button id="theme-toggle" aria-label="Toggle Theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="error-wrapper">
+        <span class="floating-icon">🚀</span>
+        <div class="error-code">404</div>
+        <h1 class="error-title">Page Not Found</h1>
+        <p class="error-desc">Looks like this page has been moved, renamed, or never existed. Don't worry — our best content is just one click away.</p>
+        <div class="error-links">
+            <a href="index.html" class="btn btn-primary"><i class="fas fa-home"></i>&nbsp; Go Home</a>
+            <a href="blog.html" class="btn btn-secondary"><i class="fas fa-newspaper"></i>&nbsp; Read Insights</a>
+            <a href="contact.html" class="btn btn-secondary"><i class="fas fa-envelope"></i>&nbsp; Contact Us</a>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/cookie-consent.js"></script>
+</body>
+</html>
