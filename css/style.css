@@ -948,6 +948,7 @@ footer {
 
 /* Responsive */
 @media (max-width: 1024px) {
+    .info-item { justify-content: center; text-align: left; }
     .container {
         padding: 0 20px;
     }
