@@ -1,179 +1,179 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://sarankar.com/</loc>
-        <lastmod>2026-03-25</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://sarankar.com/blog.html</loc>
-        <lastmod>2026-03-25</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://sarankar.com/about.html</loc>
-        <lastmod>2026-03-25</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://sarankar.com/contact.html</loc>
-        <lastmod>2026-03-25</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://sarankar.com/privacy.html</loc>
-        <lastmod>2026-03-25</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>https://sarankar.com/terms.html</loc>
-        <lastmod>2026-03-25</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>https://sarankar.com/disclaimer.html</loc>
-        <lastmod>2026-03-25</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <priority>0.5</priority>
     </url>
 
     <!-- Insights: Flutter Development -->
     <url>
         <loc>https://sarankar.com/insights/riverpod-vs-provider-vs-bloc.html</loc>
-        <lastmod>2026-03-25</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://sarankar.com/insights/monetized-flutter-app-scratch.html</loc>
-        <lastmod>2026-03-25</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://sarankar.com/insights/offline-support-flutter.html</loc>
-        <lastmod>2026-03-25</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://sarankar.com/insights/flutter-animations-guide.html</loc>
-        <lastmod>2026-03-25</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://sarankar.com/insights/flutter-performance-optimization.html</loc>
-        <lastmod>2026-03-25</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://sarankar.com/insights/flutter-state-management.html</loc>
-        <lastmod>2026-03-25</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://sarankar.com/insights/flutter-play-store-guide.html</loc>
-        <lastmod>2026-03-25</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://sarankar.com/insights/cross-platform.html</loc>
-        <lastmod>2026-03-25</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://sarankar.com/insights/app-performance.html</loc>
-        <lastmod>2026-03-25</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <priority>0.7</priority>
     </url>
 
     <!-- Insights: Monetization -->
     <url>
         <loc>https://sarankar.com/insights/admob-setup-flutter.html</loc>
-        <lastmod>2026-03-25</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://sarankar.com/insights/how-to-increase-ecpm.html</loc>
-        <lastmod>2026-03-25</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://sarankar.com/insights/mistakes-killing-app-revenue.html</loc>
-        <lastmod>2026-03-25</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://sarankar.com/insights/ad-placement-strategies.html</loc>
-        <lastmod>2026-03-25</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://sarankar.com/insights/interstitial-vs-rewarded-ads.html</loc>
-        <lastmod>2026-03-25</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://sarankar.com/insights/admob-no-fill-guide-2026.html</loc>
-        <lastmod>2026-03-25</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://sarankar.com/insights/hybrid-app-monetization.html</loc>
-        <lastmod>2026-03-25</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://sarankar.com/insights/admob-errors-guide.html</loc>
-        <lastmod>2026-03-25</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://sarankar.com/insights/monetization.html</loc>
-        <lastmod>2026-03-25</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <priority>0.7</priority>
     </url>
 
     <!-- Insights: Strategy & General Tech -->
     <url>
         <loc>https://sarankar.com/insights/clean-architecture-guide.html</loc>
-        <lastmod>2026-03-25</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://sarankar.com/insights/ai-integration.html</loc>
-        <lastmod>2026-03-25</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://sarankar.com/insights/api-design-best-practices.html</loc>
-        <lastmod>2026-03-25</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://sarankar.com/insights/ui-ux-importance.html</loc>
-        <lastmod>2026-03-25</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://sarankar.com/insights/vercel-deployment-guide.html</loc>
-        <lastmod>2026-03-25</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://sarankar.com/insights/5g-mobile.html</loc>
-        <lastmod>2026-03-25</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://sarankar.com/insights/seo-spa.html</loc>
-        <lastmod>2026-03-25</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://sarankar.com/insights/security.html</loc>
-        <lastmod>2026-03-25</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://sarankar.com/insights/bhopal-tech-hub.html</loc>
-        <lastmod>2026-03-25</lastmod>
+        <lastmod>2026-04-17</lastmod>
         <priority>0.6</priority>
     </url>
 </urlset>
